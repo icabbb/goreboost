@@ -17,7 +17,7 @@ export default function RootLayout({
   return (
     <ViewTransitions>
       <html lang="en">
-        <body >{children}</body>
+        <body className="bg-[#2a2d6c] text-white">{children}</body>
       </html>
     </ViewTransitions>
   );

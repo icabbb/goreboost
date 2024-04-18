@@ -1,6 +1,7 @@
 "use client"
 import { JSX, SVGProps, useEffect } from "react"
 import { IconChevronsUp, IconFileAnalytics, IconSpy, IconGift, IconCloudStorm, IconAward } from '@tabler/icons-react';
+import NavBoost from "@/components/navbar";
 
 
 
@@ -33,16 +34,7 @@ export default function Component() {
   }, []);
   return (
     <div className="bg-[#2a2d6c] text-white">
-      <nav className="fixed top-0 left-0 right-0 z-10 bg-[#1b1d41] py-4 px-8">
-        <ul className="flex justify-center space-x-8">
-          <li><a href="#inicio" className="hover:text-gray-300">Inicio</a></li>
-          <li><a href="#recomendaciones" className="hover:text-gray-300">Recomendaciones</a></li>
-          <li><a href="#comprobantes" className="hover:text-gray-300">Comprobantes</a></li>
-          <li><a href="#preguntas-frecuentes" className="hover:text-gray-300">Preguntas frecuentes</a></li>
-          <li><a href="#contacto" className="hover:text-gray-300">Contacto</a></li>
-          <li><a href="#coaching" className="hover:text-gray-300">Coaching</a></li>
-        </ul>
-      </nav>
+      <NavBoost />
       <header className="py-24 px-8 text-center">
         <h1 className="text-6xl font-bold uppercase">Goreboosting</h1>
         <p className="text-2xl mt-4">El mejor eloboost de todo LATAM</p>
